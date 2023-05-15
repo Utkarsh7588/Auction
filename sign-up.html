@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign Up | Auction Site</title>
+	<link rel="stylesheet" href="style.css">
+    <style>
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+	<header>
+        <h1>Auction Website</h1>
+        <nav>
+          <ul>
+			<li><a href="index.php">Home</a></li>
+            <li><a href="sign-in.html">Sign In</a></li>
+			<li><a href="sign-up.html">Sign Up</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+
+          </ul>
+        </nav>
+      </header>
+	<main>
+		<h2>Sign Up</h2>
+		<form onsubmit="return validate()" action="process-sign-up.php" method="POST" >
+			<label for="userID">User ID</label>
+			<input type="text" name="userID">
+			<label for="password">Password</label>
+			<input type="password" name="password">
+			<label for="name">Name</label>
+			<input type="text" name="name">
+			<label for="address">Address</label>
+			<input type="text" name="address" placeholder="Optional">
+			<label for="country">Country</label>
+			<select name="country">
+				<option value="">Select a country</option>
+                <option value="India">India</option>
+				<option value="USA">USA</option>
+                <option value="China">China</option>
+				<option value="Canada">Canada</option>
+                <option value="Nepal">Nepal</option>
+				<option value="UK">UK</option>
+			</select>
+			<label for="zipcode">Zipcode</label>
+			<input type="text" name="zipcode">
+			<label for="email">Email</label>
+			<input type="email" name="email">
+			<label>Sex</label>
+			<label><input type="radio" name="sex" value="male">Male</label>
+			<label><input type="radio" name="sex" value="female">Female</label>
+           
+            <input type="submit" value="Sign Up">
+	</form>
+</main>
+
+<script src="signUpValidation.js"></script>
+
+<footer style = "padding: 20px; background-color: #333; color: #fff; text-align: center;">
+	<p>&copy; 2023 Barber Booking</p>
+</footer>
+
+</body>
+</html>

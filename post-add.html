@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post Bidding Advertisement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Post Bidding Advertisement</h1>
+    
+  </header>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="post-add.html">Post Advertisement</a></li>
+            <li><a href="my-bids.php">Your Advertisements</a></li>
+            <li><a href="index.php">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+  <main>
+    <form action="post-add.php" method="POST" enctype="multipart/form-data">
+      <label for="image">Upload Image:</label>
+      <input type="file" id="image" name="image" accept="image/*" required>
+
+      <label for="description">Item Description:</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+
+      <label for="history">Item History:</label>
+      <textarea id="history" name="history" rows="4" required></textarea>
+
+      <label for="quality">Item Quality:</label>
+      <select id="quality" name="quality" required>
+        <option value="">Select Quality</option>
+        <option value="Excellent">Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Fair">Fair</option>
+      </select>
+
+      <input type="submit" value="Submit Advertisement">
+    </form>
+  </main>
+</body>
+</html>

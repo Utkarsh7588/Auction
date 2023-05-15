@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/* Header Styles */
+header {
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+nav {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+nav ul {
+	display: flex;
+}
+nav li {
+	margin: 0 10px;
+}
+nav a {
+	font-weight: bold;
+}
+/* Main Content Styles */
+main {
+	margin: 20px auto;
+	max-width: 1000px;
+	padding: 20px;
+}
+h2 {
+	color: #333;
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+table {
+	border-collapse: collapse;
+	margin-top: 20px;
+	width: 100%;
+}
+td {
+	border: 1px solid #ccc;
+	padding: 10px;
+	vertical-align: middle;
+}
+img {
+	max-width: 200px;
+	height: auto;
+}
+form {
+	margin-top: 20px;
+}
+form label {
+	display: block;
+	margin-bottom: 10px;
+}
+input[type="number"] {
+	width: 100px;
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+input[type="submit"] {
+	padding: 5px 20px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+/* Footer Styles */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+footer p {
+	margin: 0;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="employees.xsl"?>
+
+<!DOCTYPE employees SYSTEM "employees.dtd">
+<employees>
+  <employee>
+    <id>1</id>
+    <name>John Doe</name>
+    <position>Auctioneer</position>
+    <department>Sales</department>
+    <salary>50000</salary>
+  </employee>
+  <employee>
+    <id>2</id>
+    <name>Jane Smith</name>
+    <position>Appraiser</position>
+    <department>Operations</department>
+    <salary>45000</salary>
+  </employee>
+  <!-- Add more employee information here -->
+</employees>
